@@ -88,9 +88,10 @@ a{
 /*Main*/
 .conteudo{
     width: 80%;
+    height: 50vh;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 135px;
+    margin-bottom: 130px;
 }
 
 .titulo{
@@ -120,7 +121,10 @@ a{
 }
 
 .botao{
+    margin: 10px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-top: 20px;
     font-size: 30px;
@@ -133,6 +137,33 @@ a{
     color: white;
     box-shadow: -2px 3px 20px #62BA1B;
     padding: 20px;
+    transition: 0.5s;
+}
+
+.botao:hover{
+    margin-left: 5px;
+    padding: 25px;
+    font-size: 35px;
+    width: 60%;
+    transition: 0.5s;
+}
+
+.botao::after {
+    content: '';
+    left: 80px;
+    bottom: 25px;
+    height: 2px;
+    width: 0px;
+    background-color: currentColor;
+    transition: width 0.5s ease;
+}
+
+.botao:hover::after {
+    width: 75%;
+}
+
+.botao:not(:hover){
+    transition: 0.5s;
 }
 
 .imagem{
@@ -145,11 +176,11 @@ a{
     border: 5px solid #303030;
     border-radius: 100%;
     margin: auto;
-    height: 450px;
+    height: 400px;
     box-shadow: -2px 3px 20px #000000;
 }
 .imagem img:hover{
-    height: 500px;
+    height: 450px;
     transition: 0.5s;
 }
 
