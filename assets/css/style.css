@@ -14,13 +14,13 @@
 
 /*Cabeçalho*/
 .cabecalho {
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
   display: flex;
   justify-content: space-between;
   width: 85vw;
   padding: 40px;
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .navegacao1 {
@@ -44,15 +44,17 @@
 
 /*Main*/
 .conteudo {
-  width: 80%;
+  width: 70%;
   height: 50vh;
   display: flex;
   justify-content: space-between;
 }
 
 .texto-e-botao {
+  margin-left: 20px;
+  justify-content: center;
   gap: 20px;
-  max-width: 60%;
+  max-width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -66,7 +68,7 @@
 .rodape {
   max-width: 100vw;
   width: 75%;
-  height: 15vh;
+  margin-top: 50px;
   display: flex;
 }
 
@@ -96,7 +98,7 @@ a {
 
 /*Background*/
 .pagina {
-  background-image: url(/designweb-xavier/atv1-portfólio/assets/img/fundo-desktop.svg);
+  background-image: url("../img/fundo-desktop.svg");
 }
 
 /*Tipografia*/
@@ -153,11 +155,6 @@ a {
   transition: 0.5s;
 }
 
-.menu {
-  font-size: 20px;
-  color: #9C9C9C;
-}
-
 /*Botão*/
 .botao {
   margin-top: 10px;
@@ -179,9 +176,8 @@ a {
 }
 
 .botao:hover {
-  margin-left: 5px;
-  padding: 20px;
-  font-size: 25px;
+  padding: 25px;
+  font-size: 22px;
   width: 70%;
   transition: 0.5s;
 }
@@ -240,6 +236,7 @@ a {
 @media screen and (max-width: 1180px) {
   .pagina {
     gap: 40px;
+    background-image: url("../img/fundo-mobile.svg");
   }
   .titulo {
     font-size: 2.3rem;

@@ -21,7 +21,7 @@ a {
 
 /*Background*/
 .pagina {
-  background-image: url(/designweb-xavier/atv1-portfólio/assets/img/fundo-desktop.svg);
+  background-image: url("../img/fundo-desktop.svg");
 }
 
 /*Tipografia*/
@@ -78,11 +78,6 @@ a {
   transition: 0.5s;
 }
 
-.menu{
-    font-size: 20px;
-    color: $cinza-texto;
-}
-
 /*Botão*/
 .botao {
   margin-top: 10px;
@@ -104,9 +99,8 @@ a {
 }
 
 .botao:hover {
-  margin-left: 5px;
-  padding: 20px;
-  font-size: 25px;
+  padding: 25px;
+  font-size: 22px;
   width: 70%;
   transition: 0.5s;
 }
