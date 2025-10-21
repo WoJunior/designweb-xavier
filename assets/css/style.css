@@ -323,6 +323,7 @@ a {
   }
   .menu {
     display: flex;
+    color: #9C9C9C;
   }
   .conteudo {
     flex-direction: column-reverse;
