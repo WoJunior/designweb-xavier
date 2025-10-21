@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Wallace Xavier">
+    <title>Portfólio</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
-<body>
- 
-    <header class="header">
-        <nav class="container dividir-extremidades">
-            <ul class="menu menu-navegacao display-flex lista-sem-estilo">
-                <li><a href="#">Estudos de caso</a></li>
-                <li><a href="#">Trabalhos</a></li>
-                <li><a href="#">Entre em contato</a></li>
-            </ul>
-            <ul class="menu menu-social display-flex lista-sem-estilo">
-                <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-behance"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-            </ul>
+<body class="pagina">
+
+    <header class="cabecalho">
+        <nav class="navegacao1">
+            <a href="#">Estudos de Casos</a>
+            <a href="#">Trabalhos</a>
+            <a href="#">Entre em contato</a>
         </nav>
-    </header>
 
-    <main>
-
-        <section class="container">
-            <div class="perfil">
-                <h1>Bruno Nakamura</h1>
-                <h3>UX / Dev Front-end</h3>
-                <p>Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.</p>
-                <button>
-                    Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i></i>
-                </button>
-            </div>
-            <figure class="foto">
-                <img src="assets/img/perfil.png" alt="Foto do Bruno Nakamura">
-            </figure>
-        </section>
+        <a href="#" class="menu">☰ Menu</a>
         
-        <section class="container alinhar-coluna last-jobs">
-            <h5>Trabalhou em:</h5>
-            <ul class="lista-sem-estilo display-flex">
-                <li><img src="assets/img/img-job-1.svg" alt=""></li>
-                <li><img src="assets/img/img-job-2.svg" alt=""></li>
-                <li><img src="assets/img/img-job-3.svg" alt=""></li>
-                <li><img src="assets/img/img-job-4.svg" alt=""></li>
-                <li><img src="assets/img/img-job-5.svg" alt=""></li>
-            </ul>
+        <nav class="navegacao2">
+            <a href="">
+                <img src="assets/img/linkedin.logo.svg" alt="">
+            </a>
+            <a href="">
+                <img src="assets/img/twitter.logo.svg" alt="">
+            </a>
+            <a href="http://lattes.cnpq.br/6404794234462645">
+                <img src="assets/img/lattes.logo.svg" alt="">
+            </a>
+        </nav>
+    </header> 
+
+    <main class="conteudo">
+
+        <section class="texto-e-botao">
+            <h2 class="titulo">
+                Wallace Xavier
+            </h2>
+
+            <p class="subtitulo">
+                UX e Dev Front-End
+            </p>
+
+            <p class="descricao">
+                Sou discente do IFRN, atualmente no segundo período do curso Técnico em Informática para Internet. Tenho experiência na criação de websites e no design de interfaces para sistemas com foco em usabilidade e experiência do usuário, utilizando linguagens como HTML, CSS e, além disso, também uso o Figma para o desenvolvimento do projeto visual.
+            </p>
+            
+            <a class="botao" href="#">
+                Vamos trabalhar juntos >
+            </a>
+        </section>
+         
+        <section class="imagem">
+            <img src="assets/img/gato.jpg" alt="">
         </section>
 
     </main>
-    
+
+    <footer class="rodape">
+        <nav class="secao-trabalhos">
+            <p>Trabalhou em:</p>
+            <section class="trabalhos">
+                <a href="#">Lorem</a>
+                <a href="#">Ipsum</a>
+                <a href="#">Dolor</a>
+                <a href="#">Sit</a>
+                <a href="#">Amet</a>
+            </section>
+        </nav>
+    </footer>
+
 </body>
 </html>

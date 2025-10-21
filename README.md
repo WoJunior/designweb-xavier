@@ -1,4 +1,8 @@
 # Design Web 2025 - Os pioneiros
+<<<<<<< HEAD
+---
+lorem ipsum dolor sit amet consectur
+=======
 
 ## Como a Turma Vai Trabalhar com Fork no GitHub
 
@@ -60,4 +64,5 @@ Este é um guia simples para a turma colaborar no projeto usando GitHub.
 
 ---
 Esse processo ajuda a turma a colaborar, mantendo tudo organizado e atualizado com as tarefas do professor.
+>>>>>>> main
 

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Raleway:wght@300;500&display=swap');
+
+/*Reset, estilo geral e variáveis*/
+
+$branco: white;
+$cinza-texto: #9C9C9C;
+$cinza-escuro: #1B1B1B;
+$cinza-borda: #303030;
+$verde-principal: #1cb117;
+$verde-secundario: #0ead09;
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Background*/
+.pagina {
+  background-image: url("../img/fundo-desktop.svg");
+}
+
+/*Tipografia*/
+.titulo, .subtitulo {
+  font-family: 'Raleway';
+  color: $branco;
+}
+
+.titulo {
+  font-size: 3rem;
+}
+
+.subtitulo {
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.descricao {
+  font-size: 1.2rem;
+  color: $cinza-texto;
+}
+
+/*Navegação*/
+.navegacao1 a {
+  font-family: 'IBM Plex Mono', monospace;
+  color: $cinza-texto;
+}
+
+.navegacao1 a:hover {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: $verde-principal;
+  color: $branco;
+  transition: 0.5s;
+}
+
+.navegacao1 a:not(:hover) {
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.navegacao2 a img {
+  width: 20px;
+}
+
+.navegacao2 a:hover img {
+  width: 25px;
+  filter: brightness(0) invert(1);
+  transition: 0.5s;
+}
+
+.navegacao2 a:not(:hover) img {
+  transition: 0.5s;
+}
+
+/*Botão*/
+.botao {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: 'IBM Plex Mono';
+  font-weight: bold;
+  border-radius: 5px;
+  width: 65%;
+  background-color: $verde-principal;
+  border: 1px solid $verde-secundario;
+  color: $branco;
+  box-shadow: -2px 3px 20px $verde-secundario;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.botao:hover {
+  padding: 25px;
+  font-size: 22px;
+  width: 70%;
+  transition: 0.5s;
+}
+
+.botao::after {
+  content: '';
+  left: 80px;
+  bottom: 25px;
+  height: 2px;
+  width: 0px;
+  background-color: currentColor;
+  transition: width 0.5s ease;
+}
+
+.botao:hover::after {
+  width: 75%;
+}
+
+.imagem img {
+  border: 5px solid $cinza-borda;
+  border-radius: 100%;
+  margin: auto;
+  height: 400px;
+  box-shadow: -2px 3px 20px #000000;
+  transition: 0.5s;
+}
+
+.imagem img:hover {
+  height: 450px;
+}
+
+/*Seções do rodapé*/
+.secao-trabalhos p {
+  color: white;
+}
+
+.trabalhos a {
+  display: flex;
+  justify-content: center;
+  border: 2.5px solid $cinza-borda;
+  border-radius: 5px;
+  padding: 20px;
+  width: 17%;
+  font-size: 20px;
+  color: $cinza-texto;
+  transition: 0.5s;
+}
+
+.trabalhos a:hover {
+  border: 2.5px solid $verde-principal;
+  background-color: $verde-principal;
+  color: white;
+  box-shadow: -2px 3px 20px $verde-secundario;
+}

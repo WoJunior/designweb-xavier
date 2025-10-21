@@ -1,0 +1,165 @@
+@media screen and (max-width: 1180px) {
+  .pagina {
+    gap: 40px;
+    background-image: url('../img/fundo-mobile.svg');
+  }
+
+  .titulo {
+    font-size: 2.3rem;
+  }
+
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+
+  .rodape {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .pagina {
+    overflow-y: scroll;
+    gap: 35px;
+  }
+
+  .cabecalho {
+    width: 90vw;
+    padding: 30px;
+  }
+
+  .navegacao2 a img{
+    width: 25px;
+  }
+
+  .conteudo {
+    width: 90%;
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .titulo {
+    font-size: 2.1rem;
+  }
+
+  .subtitulo {
+    font-size: 1.8rem;
+  }
+
+  .descricao {
+    width: 60%;
+    font-size: 1rem;
+  }
+
+  .imagem {
+    width: 60%;
+  }
+
+  .imagem img {
+    height: 220px;
+  }
+
+  .texto-e-botao {
+    max-width: 80%;
+    align-items: center;
+  }
+
+  .botao {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .rodape {
+    margin-block-end: 20px;
+  }
+
+  .trabalhos a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pagina {
+    gap: 30px;
+    overflow-y: scroll;
+  }
+
+  .cabecalho {
+    flex-direction: row-reverse;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .navegacao1 {
+    display: none;
+  }
+
+  .navegacao2 {
+    width: 100px;
+  }
+
+  .navegacao2 a img {
+    margin-right: 0px;
+    width: 25px;
+  }
+
+  .menu{
+    display: flex;
+  }
+
+  .conteudo {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap: 30px;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .descricao {
+    font-size: 0.9rem;
+  }
+
+  .imagem {
+    width: 100%;
+  }
+
+  .imagem img {
+    height: 200px;
+  }
+
+  .texto-e-botao {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .botao {
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  .rodape {
+    margin-bottom: 20px;
+  }
+
+  .trabalhos {
+    overflow-x: scroll;
+    gap: 20px;
+  }
+  
+  .trabalhos a {
+    width: 80px;
+  }
+}
