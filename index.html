@@ -1,65 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lista 3 - Layout com flex/grid</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
+<body class="bg-gray-200 flex-center">
+    
+    <main class="flex justify-center bg-white p-10 gap-10 max-w-4xl mx-auto my-16 rounded-lg shadow-lg">
 
-    <header class="header">
-        <nav class="container dividir-extremidades">
-            <ul class="menu menu-navegacao display-flex lista-sem-estilo">
-                <li><a href="#">Estudos de caso</a></li>
-                <li><a href="#">Trabalhos</a></li>
-                <li><a href="#">Entre em contato</a></li>
-            </ul>
-            <ul class="menu menu-social display-flex lista-sem-estilo">
-                <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-behance"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <section class="flex flex-col bg-blue-100 p-8 rounded-lg max-w-sm gap-4 shadow-md">
+            <h1 class="text-4xl font-bold text-gray-900">
+                Titulo do texto
+            </h1>
 
-    <main>
+            <h2 class="text-2xl font-semibold text-gray-700">
+                Subtitulo do texto
+            </h2>
 
-        <section class="container">
-            <div class="perfil">
-                <h1>Bruno Nakamura</h1>
-                <h3>UX / Dev Front-end</h3>
-                <p>Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.</p>
-                <button>
-                    Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i></i>
-                </button>
-            </div>
-            <figure class="foto">
-                <img src="assets/img/perfil.png" alt="Foto do Bruno Nakamura">
-            </figure>
+            <p class="text-lg text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dignissimos esse voluptates aspernatur sed fugit sequi quis necessitatibus, est similique explicabo quam et nemo quos quod facilis exercitationem, quisquam tempora aperiam dolorem non provident! Necessitatibus dolore quibusdam aliquid fugiat numquam.
+            </p>
         </section>
-        <section class="container alinhar-coluna last-jobs">
-            <h5>Trabalhou em:</h5>
-            <ul class="lista-sem-estilo display-flex">
-                <li><img src="assets/img/img-job-1.svg" alt=""></li>
-                <li><img src="assets/img/img-job-2.svg" alt=""></li>
-                <li><img src="assets/img/img-job-3.svg" alt=""></li>
-                <li><img src="assets/img/img-job-4.svg" alt=""></li>
-                <li><img src="assets/img/img-job-5.svg" alt=""></li>
-            </ul>
+
+        <section class="bg-blue-100 p-8 rounded-lg shadow-md">
+            <img class="h-96 rounded-lg bg-transparent shadow-lg" src="https://picsum.photos/400" alt="">
         </section>
 
     </main>
-    
+
 </body>
 </html>
+
+<!--
+# Documentação:
+
+- Eu preferi utilizar o flexbox, porque estou mais acostumado a usar, além de ser o único que "entendo", mas no geral, foi a melhor opção que encontrei para realizar a atividade.
+
+-->
