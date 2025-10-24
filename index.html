@@ -1,84 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="author" content="Wallace Xavier">
-    <title>Portfólio - Tailwind</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="author" content="Wallace Xavier">
+  <title>Portfólio - Wallace Xavier</title>
 
-    <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Raleway:wght@300;500&display=swap");</style>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="flex flex-col gap-40 text-white bg-[url(assets/img/fundo-desktop.svg)]">
 
-    <header class="flex flex-row m-auto justify-between bg-neutral-900 p-10 w-4/5 text-neutral-500 rounded-b-xl">
-        <nav class="flex gap-6 ">
-            <a class="hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all" href="#">Estudos de Casos</a>
-            <a class="hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all" href="#">Trabalhos</a>
-            <a class="hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all" href="#">Entre em contato</a>
-        </nav>
+<body class="flex flex-col gap-10 xl:gap-32 text-white bg-[url(assets/img/fundo-desktop.svg)] bg-cover xl:bg-no-repeat">
 
-        <a href="#" class="hidden">☰ Menu</a>
-        
-        <nav class="flex gap-4 w-24">
-            <a class="" href="">
-                <img src="assets/img/linkedin.logo.svg" alt="">
-            </a>
-            <a href="">
-                <img src="assets/img/twitter.logo.svg" alt="">
-            </a>
-            <a href="http://lattes.cnpq.br/6404794234462645">
-                <img src="assets/img/lattes.logo.svg" alt="">
-            </a>
-        </nav>
-    </header> 
+  <header class="flex justify-between items-center bg-neutral-900 text-neutral-500 rounded-b-xl p-6 xl:w-4/5 xl:m-auto">
+    
+    <nav class="hidden xl:flex gap-8 p-4">
+      <a class="hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:text-white rounded-lg p-2 transition-all duration-300" href="#">Estudos de Casos</a>
+      <a class="hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:text-white rounded-lg p-2 transition-all duration-300" href="#">Trabalhos</a>
+      <a class="hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:text-white rounded-lg p-2 transition-all duration-300" href="#">Entre em contato</a>
+    </nav>
 
-    <main class="flex justify-center gap-96 width-4/6">
+    <a href="#" class="xl:hidden text-2xl">☰ Menu</a>
 
-        <section class="flex flex-col gap-10 w-1/3 ">
+    <nav class="flex items-center w-28 gap-4">
+      <a class="hover:brightness-200 transition-all duration-300" href="#">
+        <img src="assets/img/linkedin.logo.svg" alt="LinkedIn">
+      </a>
+      <a class="hover:brightness-200 transition-all duration-300" href="#">
+        <img src="assets/img/twitter.logo.svg" alt="Twitter">
+      </a>
+      <a class="hover:brightness-200 transition-all duration-300" href="http://lattes.cnpq.br/6404794234462645">
+        <img src="assets/img/lattes.logo.svg" alt="Lattes">
+      </a>
+    </nav>
+  </header>
 
-            <div>
-                <h2 class="font-bold text-5xl">
-                    Wallace Xavier
-                </h2>
+  <main class="flex flex-col-reverse xl:flex-row justify-center items-center xl:h-[400px] xl:w-4/5 xl:m-auto gap-10 xl:gap-0">
 
-                <p class="font-semibold text-2xl">
-                    UX e Dev Front-End
-                </p>
-            </div>
+    <section class="flex flex-col gap-6 w-4/5 xl:w-1/3 m-auto h-auto xl:h-[350px] text-center xl:text-left">
+      <div>
+        <h2 class="font-bold text-5xl">Wallace Xavier</h2>
+        <p class="font-semibold text-2xl">UX e Dev Front-End</p>
+      </div>
 
-            <p class="text-neutral-500 text-lg">
-                Sou discente do IFRN, atualmente no segundo período do curso Técnico em Informática para Internet. Tenho experiência na criação de websites e no design de interfaces para sistemas com foco em usabilidade e experiência do usuário, utilizando linguagens como HTML, CSS e, além disso, também uso o Figma para o desenvolvimento do projeto visual.
-            </p>
-            
-            <a class="bg-[#1cb117] shadow-[0_0_10px_#1cb117] p-5 text-white text-center text-xl font-bold rounded p-5 w-3/5" href="#">
-                Vamos trabalhar juntos >
-            </a>
-        </section>
-         
-        <section>
-            <img class="rounded-full h-auto w-80" src="assets/img/gato.jpg" alt="">
-        </section>
+      <p class="text-neutral-500 text-lg">
+        Sou discente do IFRN, atualmente no segundo período do curso Técnico em Informática para Internet. Tenho experiência na criação de websites e no design de interfaces para sistemas com foco em usabilidade e experiência do usuário, utilizando linguagens como HTML e CSS. Além disso, uso o Figma para o desenvolvimento do projeto visual.
+      </p>
 
-    </main>
- 
-    <footer class="w-2/3 m-auto">
+      <a class="bg-[#1cb117] shadow-[0_0_10px_#1cb117] hover:brightness-75 p-5 text-white text-center text-xl font-bold rounded-lg w-full xl:w-3/5 transition-all duration-300" href="#">
+        Vamos trabalhar juntos >
+      </a>
+    </section>
 
-        <nav class="flex flex-col gap-6">
-            <p>Trabalhou em:</p>
+    <section class="flex justify-center xl:w-1/4 m-auto">
+      <img class="w-[350px] md:w-[300px] xl:w-[350px] rounded-full hover:scale-110 border-solid border-green-200 transition-all duration-300" src="assets/img/gato.jpg" alt="Foto de perfil">
+    </section>
 
-            <section class="flex justify-between text-center text-neutral-500">
-                <a class="border-2 border-solid border-neutral-800 rounded-lg p-4 w-48 hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all duration-500" href="#">Lorem</a>
-                <a class="border-2 border-solid border-neutral-800 rounded-lg p-4 w-48 hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all duration-500" href="#">Ipsum</a>
-                <a class="border-2 border-solid border-neutral-800 rounded-lg p-4 w-48 hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all duration-500" href="#">Dolor</a>
-                <a class="border-2 border-solid border-neutral-800 rounded-lg p-4 w-48 hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all duration-500" href="#">Sit</a>
-                <a class="border-2 border-solid border-neutral-800 rounded-lg p-4 w-48 hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all duration-500" href="#">Amet</a>
-            </section>
-        </nav>
+  </main>
 
-    </footer>
+  <footer class="w-4/5 xl:w-2/3 m-auto mb-10">
+    <nav class="flex flex-col gap-6">
+      <p class="text-2xl xl:text-xl">Trabalhou em:</p>
+
+      <section class="flex overflow-scroll xl:overflow-visible justify-start xl:justify-between gap-6 xl:gap-0 text-center text-neutral-500">
+        <a class="border-2 border-neutral-800 rounded-lg p-4 w-40 xl:w-48 hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all duration-300" href="#">Lorem</a>
+        <a class="border-2 border-neutral-800 rounded-lg p-4 w-40 xl:w-48 hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all duration-300" href="#">Ipsum</a>
+        <a class="border-2 border-neutral-800 rounded-lg p-4 w-40 xl:w-48 hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all duration-300" href="#">Dolor</a>
+        <a class="border-2 border-neutral-800 rounded-lg p-4 w-40 xl:w-48 hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all duration-300" href="#">Sit</a>
+        <a class="border-2 border-neutral-800 rounded-lg p-4 w-40 xl:w-48 hover:bg-[#1cb117] hover:shadow-[0_0_10px_#1cb117] hover:border-[#1cb117] hover:text-white transition-all duration-300" href="#">Amet</a>
+      </section>
+    </nav>
+  </footer>
 
 </body>
 </html>
