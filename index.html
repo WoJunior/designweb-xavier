@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="author" content="Wallace Xavier">
-    <title>Portfólio</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <title>Landinpage - InfoWebeti</title>
 </head>
-<body class="pagina">
+<body>
 
-    <header class="cabecalho">
-        <nav class="navegacao1">
-            <a href="#">Estudos de Casos</a>
-            <a href="#">Trabalhos</a>
-            <a href="#">Entre em contato</a>
-        </nav>
+  <header class="container max-w-7xl mx-auto flex justify-between py-8 items-center">
+    <figure>
+      <img class="" src="assets/img/logoturma.svg" alt="Logo de InfoWeb by turma InfoWebeti">
+    </figure>
+    <nav>
+      <menu class="flex gap-8 text-gray-500">
+        <li><a class="hover:bg-sky-700 hover:text-white p-3 rounded-lg transition-all duration-300" href="#sobre">Sobre</a></li>
+        <li><a class="hover:bg-sky-700 hover:text-white p-3 rounded-lg transition-all duration-300" href="#professores">Professores</a></li>
+        <li><a class="hover:bg-sky-700 hover:text-white p-3 rounded-lg transition-all duration-300" href="#alunos">Alunos</a></li>
+        <li><a class="hover:bg-sky-700 hover:text-white p-3 rounded-lg transition-all duration-300" href="#projetos">Projetos</a></li>
+        <li><a class="bg-gray-800 text-white p-3 rounded-lg hover:text-gray-800 hover:bg-white border border-gray-800 transition-all duration-300" href="#documentos">Documentos</a></li>
+      </menu>
+    </nav>
+  </header>
+  <main class="flex flex-col container max-w-7xl mx-auto justify-center items-center">
 
-        <a href="#" class="menu">☰ Menu</a>
+    <!-- hero -->
+    <section class="flex items-center flex-col p-20 bg-gray-100 rounded-xl w-full">
+      <h1 class="text-5xl max-w-140 text-gray-800">Depois de muita espera, ela finalmente chegou!</h1>
+      <p class="my-10 max-w-140 text-gray-500">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
+
+      <div class="flex justify-center gap-4">
+        <a href="#" class="border border-gray-800 bg-gray-800 text-white py-4 px-8 rounded-lg hover:bg-white hover:text-gray-800">Ser feliz agora</a>
+        <a href="#" class="border border-gray-800 text-gray-800 py-4 px-8 rounded-lg hover:bg-gray-800 hover:text-white">Ficar triste</a>
+      </div>
+    </section>
+
+    <!-- logos -->
+     <section class="w-full">
+      <ul class="flex items-center justify-between my-20">
+        <li><img src="assets/img/logoapp (1).svg" alt=""></li>
+        <li><img src="assets/img/logoapp (2).svg" alt=""></li>
+        <li><img src="assets/img/logoapp (3).svg" alt=""></li>
+        <li><img src="assets/img/logoapp (4).svg" alt=""></li>
+        <li><img src="assets/img/logoapp (5).svg" alt=""></li>
+        <li><img src="assets/img/logoapp (6).svg" alt=""></li>
+        <li><img src="assets/img/logoapp (7).svg" alt=""></li>
+      </ul>
+     </section>
+  
+    <!-- destaques -->
+     <section class="flex justify-between mb-20 text-gray-500 w-full">
         
-        <nav class="navegacao2">
-            <a href="">
-                <img src="assets/img/linkedin.logo.svg" alt="">
-            </a>
-            <a href="">
-                <img src="assets/img/twitter.logo.svg" alt="">
-            </a>
-            <a href="http://lattes.cnpq.br/6404794234462645">
-                <img src="assets/img/lattes.logo.svg" alt="">
-            </a>
-        </nav>
-    </header> 
+      <div class="flex gap-4 items-baseline hover:text-gray-800 transition-all duration-300">
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+        <div>
+          <strong>Ela é bonita</strong>
+          <p>Além de linda, ela é a mais top.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-4 items-baseline hover:text-gray-800 transition-all duration-300">
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+        <div>
+          <strong >O azul destaque</strong>
+          <p>O azul royal ficou para trás. Contemple o novo azul esmeralda.</p>
+        </div>
+      </div>
 
-    <main class="conteudo">
+      <div class="flex gap-4 items-baseline hover:text-gray-800 transition-all duration-300">
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+        <div>
+          <strong>Webeti</strong>
+          <p>O nosso mascote é um gênio da informática.</p>
+        </div>
+      </div>
 
-        <section class="texto-e-botao">
-            <h2 class="titulo">
-                Wallace Xavier
-            </h2>
+     </section>
 
-            <p class="subtitulo">
-                UX e Dev Front-End
-            </p>
+     <!-- mockup da camiseta da turma -->
+    <figure><img src="assets/img/banner.svg" class="w-full" alt="Imagem destaque da camiseta"></figure>
+    <h2 class="font-bold text-5xl my-10 text-gray-800">Alunos que já compraram.</h2>
+    <p class="text-gray-500 text-xl w-1/2 text-center">Junte-se aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
 
-            <p class="descricao">
-                Sou discente do IFRN, atualmente no segundo período do curso Técnico em Informática para Internet. Tenho experiência na criação de websites e no design de interfaces para sistemas com foco em usabilidade e experiência do usuário, utilizando linguagens como HTML, CSS e, além disso, também uso o Figma para o desenvolvimento do projeto visual.
-            </p>
-            
-            <a class="botao" href="#">
-                Vamos trabalhar juntos >
-            </a>
-        </section>
-         
-        <section class="imagem">
-            <img src="assets/img/gato.jpg" alt="">
-        </section>
-
-    </main>
- 
-    <footer class="rodape">
-        <nav class="secao-trabalhos">
-            <p>Trabalhou em:</p>
-            <section class="trabalhos">
-                <a href="#">Lorem</a>
-                <a href="#">Ipsum</a>
-                <a href="#">Dolor</a>
-                <a href="#">Sit</a>
-                <a href="#">Amet</a>
-            </section>
-        </nav>
-    </footer>
-
+     <!-- métricas -->
+     <section class="grid grid-cols-3 gap-4 text-center my-10 justify-between w-full">
+      <div>
+        <h3 class="text-5xl text-gray-800 font-semibold">243+</h3>
+        <span>Alunos felizes</span>
+      </div>
+      <div>
+        <h3 class="text-5xl text-gray-800 font-semibold">38.3903+</h3>
+        <span>Alunos adquirindo</span>
+      </div>
+      <div>
+        <h3 class="text-5xl text-gray-800 font-semibold">154+</h3>
+        <span>Alunos tristes</span>
+      </div>
+     </section>
+  </main>
+  
 </body>
 </html>
