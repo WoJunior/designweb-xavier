@@ -8,10 +8,14 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-</head>
-<body class="flex flex-col min-h-screen">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+    </style>
 
-    <header class="flex items-center justify-between p-6 bg-gray-100 border-b border-gray-300">
+</head>
+<body class="flex flex-col min-h-screen font-[Sora]">
+
+    <header class="flex items-center justify-between p-4 bg-gray-100 border-b border-gray-300">
         <nav>
             <img src="assets/img/logo-awe.svg" alt="">
         </nav>
@@ -28,16 +32,39 @@
 
         <div class="flex flex-col items-center w-1/6 min-h-full border-r border-gray-300">
             <h1 class="font-bold text-3xl text-gray-700 py-8">Canal do cliente</h1>
-            <ol>
-                <li>
-                    Loja de projetos
-                    <ul>
-                        <li>Dashboard</li>
-                        <li>Compra de créditos</li>
-                        <li>Concluídos</li>
+
+            <ul class="flex flex-col w-full h-full ml-12">
+                <li class="flex flex-col gap-10">
+                <span class="flex flex-col gap-4">
+                    <div class="flex gap-2">
+                        <img class="w-6" src="assets/img/vectorIcon.svg" alt="">
+                        <p class="font-bold text-gray-600">Loja de projetos</p>
+                    </div>
+
+                    <ul class="flex flex-col pl-6 ml-3 gap-4 text-gray-600">
+                        <li class="hover:text-blue-800 hover:font-bold transition-all duration-200">
+                            <a href="index.html">Dashboard</a>
+                        </li>
+                        <li class="hover:text-blue-800 hover:font-bold transition-all duration-200">
+                            <a href="compra.html">Compra de créditos</a>
+                        </li>
+                        <li class="hover:text-blue-800 hover:font-bold transition-all duration-200">
+                            <a href="#">Concluídos</a>
+                        </li>
                     </ul>
+                </span>
+
+                <div class="flex gap-2">
+                    <img class="w-6" src="assets/img/vectorIcon2.svg" alt="">
+                    <p class="text-gray-600">Gestão de projetos</p>
+                </div>
+
+                <div class="flex gap-2">
+                    <img class="w-6" src="assets/img/vectorIcon3.svg" alt="">
+                    <p class="text-gray-600">Campanhas</p>
+                </div>
                 </li>
-            </ol>
+            </ul>
         </div>
 
         <div class="flex flex-col gap-10 p-8">
@@ -109,7 +136,7 @@
 
     </main>
 
-    <footer class="flex flex-col gap-4 p-6 border-t border-gray-300 float-right items-end">
+    <footer class="flex flex-col gap-4 p-4 border-t border-gray-300 float-right items-end">
         <img class="h-6" src="assets/img/Vector.svg" alt="">
     </footer>
 
