@@ -1,27 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abas com Transição (sem JS)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
-<h1>Modificando a altura das linhas (itens) de uma lista com o CSS</h1>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-<p>Lista com a altura das linhas (itens) aumentada:</p>
-<ul class="primeiraLista">
-  <li>Refrigerante</li>
-  <li>Café</li>
-  <li>Leite</li>
-</ul>
+  <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-4">
 
-<p>Lista com a altura das linhas (itens) reduzida:</p>
-<ul class="segundaLista">
-  <li>Refrigerante</li>
-  <li>Café</li>
-  <li>Leite</li>
-</ul>
+    <!-- Abas -->
+    <div class="flex border-b border-gray-200">
+      <input type="radio" id="aba1" name="abas" class="hidden peer" checked>
+      <label for="aba1" class="cursor-pointer py-2 px-4 text-gray-600 hover:text-blue-500 border-b-2 border-transparent peer-checked:border-blue-500 peer-checked:text-blue-600 transition-colors duration-300">
+        Aba 1
+      </label>
+
+      <input type="radio" id="aba2" name="abas" class="hidden peer">
+      <label for="aba2" class="cursor-pointer py-2 px-4 text-gray-600 hover:text-blue-500 border-b-2 border-transparent peer-checked:border-blue-500 peer-checked:text-blue-600 transition-colors duration-300">
+        Aba 2
+      </label>
+
+      <input type="radio" id="aba3" name="abas" class="hidden peer">
+      <label for="aba3" class="cursor-pointer py-2 px-4 text-gray-600 hover:text-blue-500 border-b-2 border-transparent peer-checked:border-blue-500 peer-checked:text-blue-600 transition-colors duration-300">
+        Aba 3
+      </label>
+    </div>
+
+    <!-- Conteúdo -->
+    <div class="mt-6 relative h-32">
+      <!-- Aba 1 -->
+      <div class="absolute inset-0 opacity-0 hidden peer-checked:block peer-checked:opacity-100 transition-opacity duration-500 ease-in-out">
+        <h2 class="text-xl font-bold mb-2">Conteúdo da Aba 1</h2>
+        <p>Esta é a aba inicial (já visível ao carregar).</p>
+      </div>
+
+      <!-- Aba 2 -->
+      <div class="absolute inset-0 opacity-0 hidden peer-checked:block peer-checked:opacity-100 transition-opacity duration-500 ease-in-out">
+        <h2 class="text-xl font-bold mb-2">Conteúdo da Aba 2</h2>
+        <p>Esta aparece com uma transição suave ao clicar.</p>
+      </div>
+
+      <!-- Aba 3 -->
+      <div class="absolute inset-0 opacity-0 hidden peer-checked:block peer-checked:opacity-100 transition-opacity duration-500 ease-in-out">
+        <h2 class="text-xl font-bold mb-2">Conteúdo da Aba 3</h2>
+        <p>Também aparece com fade-in suave.</p>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 </html>

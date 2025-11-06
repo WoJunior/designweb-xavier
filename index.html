@@ -38,30 +38,39 @@
                 <span class="flex flex-col gap-4">
                     <div class="flex gap-2">
                         <img class="w-6" src="assets/img/vectorIcon.svg" alt="">
-                        <p class="font-bold text-gray-600">Loja de projetos</p>
+                        <p class="font-bold text-gray-600 hover:cursor-pointer">Loja de projetos</p>
                     </div>
 
                     <ul class="flex flex-col pl-6 ml-3 gap-4 text-gray-600">
-                        <li class="hover:text-blue-800 hover:font-bold transition-all duration-200">
-                            <a href="index.html">Dashboard</a>
+                        <li class="text-blue-800 font-bold transition-all duration-200">
+                            <input type="radio" id="aba1" name="abas" class="hidden peer/aba1">
+                            <label for="aba1" class="cursor-pointer py-2 px-4 text-gray-600 hover:text-blue-500 border-b-2 peer-checked/aba1:border-blue-500 peer-checked/aba1:text-blue-600 transition-all duration-300">
+                                Dashboard
+                            </label>
                         </li>
-                        <li class="hover:text-blue-800 hover:font-bold transition-all duration-200">
-                            <a href="compra.html">Compra de créditos</a>
+                        <li class="text-blue-800 font-bold transition-all duration-200">
+                            <input type="radio" id="aba2" name="abas" class="hidden peer/aba2">
+                            <label for="aba2" class="cursor-pointer py-2 px-4 text-gray-600 hover:text-blue-500 border-b-2 peer-checked/aba1:border-blue-500 peer-checked/aba1:text-blue-600 transition-all duration-300">
+                                Dashboard
+                            </label>
                         </li>
-                        <li class="hover:text-blue-800 hover:font-bold transition-all duration-200">
-                            <a href="#">Concluídos</a>
+                        <li class="text-blue-800 font-bold transition-all duration-200">
+                            <input type="radio" id="aba3" name="abas" class="hidden peer/aba3">
+                            <label for="aba3" class="cursor-pointer py-2 px-4 text-gray-600 hover:text-blue-500 border-b-2 peer-checked/aba1:border-blue-500 peer-checked/aba1:text-blue-600 transition-all duration-300">
+                                Dashboard
+                            </label>
                         </li>
                     </ul>
                 </span>
 
                 <div class="flex gap-2">
                     <img class="w-6" src="assets/img/vectorIcon2.svg" alt="">
-                    <p class="text-gray-600">Gestão de projetos</p>
+                    <p class="text-gray-600 hover:font-bold hover:cursor-pointer transition-all duration-200">Gestão de projetos</p>
                 </div>
 
                 <div class="flex gap-2">
                     <img class="w-6" src="assets/img/vectorIcon3.svg" alt="">
-                    <p class="text-gray-600">Campanhas</p>
+                    <p class="text-gray-600 hover:font-bold hover:cursor-pointer transition-all duration-200">Campanhas</p>
                 </div>
                 </li>
             </ul>
