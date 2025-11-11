@@ -8,53 +8,27 @@
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-  <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-4">
+<div class="bg-white p-6 rounded-xl shadow-md text-center w-84">
+  <h2 class="text-lg font-semibold mb-4">Quantidade de créditos para compra</h2>
+  
+  <div class="flex items-center justify-center gap-6">
+    <!-- Botão de diminuir -->
+    <button class="text-2xl pb-2 text-blue-600 border-2 border-blue-300 rounded-full w-10 h-10 items-center justify-center hover:bg-blue-50">
+      –
+    </button>
 
-    <!-- Abas -->
-    <div class="flex border-b border-gray-200">
-      <input type="radio" id="aba1" name="abas" class="hidden peer" checked>
-      <label for="aba1" class="cursor-pointer py-2 px-4 text-gray-600 hover:text-blue-500 border-b-2 border-transparent peer-checked:border-blue-500 peer-checked:text-blue-600 transition-colors duration-300">
-        Aba 1
-      </label>
-
-      <input type="radio" id="aba2" name="abas" class="hidden peer">
-      <label for="aba2" class="cursor-pointer py-2 px-4 text-gray-600 hover:text-blue-500 border-b-2 border-transparent peer-checked:border-blue-500 peer-checked:text-blue-600 transition-colors duration-300">
-        Aba 2
-      </label>
-
-      <input type="radio" id="aba3" name="abas" class="hidden peer">
-      <label for="aba3" class="cursor-pointer py-2 px-4 text-gray-600 hover:text-blue-500 border-b-2 border-transparent peer-checked:border-blue-500 peer-checked:text-blue-600 transition-colors duration-300">
-        Aba 3
-      </label>
-    </div>
-
-    <!-- Conteúdo -->
-    <div class="mt-6 relative h-32">
-      <!-- Aba 1 -->
-      <div class="absolute inset-0 opacity-0 hidden peer-checked:block peer-checked:opacity-100 transition-opacity duration-500 ease-in-out">
-        <h2 class="text-xl font-bold mb-2">Conteúdo da Aba 1</h2>
-        <p>Esta é a aba inicial (já visível ao carregar).</p>
-      </div>
-
-      <!-- Aba 2 -->
-      <div class="absolute inset-0 opacity-0 hidden peer-checked:block peer-checked:opacity-100 transition-opacity duration-500 ease-in-out">
-        <h2 class="text-xl font-bold mb-2">Conteúdo da Aba 2</h2>
-        <p>Esta aparece com uma transição suave ao clicar.</p>
-      </div>
-
-      <!-- Aba 3 -->
-      <div class="absolute inset-0 opacity-0 hidden peer-checked:block peer-checked:opacity-100 transition-opacity duration-500 ease-in-out">
-        <h2 class="text-xl font-bold mb-2">Conteúdo da Aba 3</h2>
-        <p>Também aparece com fade-in suave.</p>
-      </div>
-    </div>
-
+    <!-- Valor fixo -->
+    <section>
+      <span class="text-4xl font-bold text-gray-800 select-none">100</span>
+      <input class="w-full border-b bg-white focus:outline-none" disabled>
+    </section>
+    <!-- Botão de aumentar -->
+    <button class="text-2xl pb-2 text-blue-600 border-2 border-blue-300 rounded-full w-10 h-10 flex items-center justify-center hover:bg-blue-50">
+      +
+    </button>
   </div>
 
-<div class="w-full h-3 bg-gray-300 rounded-full overflow-hidden">
-  <div class="h-full w-[65%] bg-blue-600 rounded-full transition-all duration-300"></div>
 </div>
-
 
 </body>
 </html>
