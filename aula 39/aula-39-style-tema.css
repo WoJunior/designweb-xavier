@@ -1,0 +1,33 @@
+[data-theme="sky"] {
+    --s: 345 66% 56%;
+    color-scheme: "light";
+    --color-base-100: oklch(80% 0.105 251.813);
+    --color-base-200: oklch(88% 0.059 254.128);
+    --color-base-300: oklch(80% 0.105 251.813);
+    --color-base-content: oklch(42% 0.199 265.638);
+    --color-primary: oklch(54% 0.245 262.881);
+    --color-primary-content: oklch(97% 0.014 308.299);
+    --color-secondary: oklch(48% 0.243 264.376);
+    --color-secondary-content: oklch(97% 0.013 17.38);
+    --color-accent: oklch(48% 0.243 264.376);
+    --color-accent-content: oklch(96% 0.018 272.314);
+    --color-neutral: oklch(48% 0.243 264.376);
+    --color-neutral-content: oklch(98% 0 0);
+    --color-info: oklch(68% 0.169 237.323);
+    --color-info-content: oklch(97% 0.013 236.62);
+    --color-success: oklch(53% 0.157 131.589);
+    --color-success-content: oklch(98% 0.031 120.757);
+    --color-warning: oklch(64% 0.222 41.116);
+    --color-warning-content: oklch(98% 0.016 73.684);
+    --color-error: oklch(58% 0.253 17.585);
+    --color-error-content: oklch(97% 0.014 343.198);
+    --radius-selector: 0rem;
+    --radius-field: 0rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 1;
+  }
+  
