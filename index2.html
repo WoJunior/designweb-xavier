@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col gap-10 border-1 p-4">
+
+    <!--exemplo1-->
+    <div x-data="{nome: 'IFRN'}" class="p-4 border">
+        <h1>
+            Olá, <span x-text="nome"></span>!
+        </h1>
+    </div>
+
+    <!--exemplo2-->
+    <div x-data="{aceso: false}" class="p-4 border">
+        <button @click="aceso = !aceso">
+            Interruptor
+        </button>
+
+        Luz: <span x-text="aceso ? '💡' : '🌑'"></span>
+    </div>
+
+    <!--exemplo3-->
+    <div x-data="{ msg: '' }" class="p-4 border">
+        <input type="text" x-model="msg" placeholder="Digite..." class="pl-2">
+
+        <p x-text="msg">
+            Você digitou: <span x-text="msg"></span>
+        </p>
+    </div>
+
+    <!--exemplo4-->
+    <div x-data="{ n1: 0, n2: 0 }" class="p-4 border">
+        <input x-model="n1" type="number" class="pl-2"> +
+        <input x-model="n2" type="number" class="pl-2"> =
+        <span x-text="parseInt(n1) + parseInt(n2)"></span>
+    </div>
+    
+    <!--exemplo5-->
+    <div class="p-4 border">
+        <!-- ParseInt converte texto para número -->
+        Resultado: 
+        <span x-text="parseInt(n1) + parseInt(n2)">
+        </span>
+    </div>
+
+    <!--exemplo6-->
+    <div class="p-4 border" x-data="{ n1: 0, n2: 0 }">
+        <span x-text="parseInt(n1) + parseInt(n2)" :class="{ 
+        'text-red-500': (parseInt(n1)+parseInt(n2)) > 10,
+        'text-blue-500': (parseInt(n1)+parseInt(n2)) <= 10}">
+        </span>
+    </div>
+</body>
+</html>
