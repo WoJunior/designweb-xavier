@@ -1,48 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="aqua">
+<html lang="pt-br" 
+      x-data="{ 
+          tab: 'home', 
+          dark: false 
+      }"
+      :data-theme="dark ? 'dracula' : 'winter'">
+
 <head>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet">
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="min-h-screen p-10 flex flex-col items-center gap-8 bg-base-200">
+<body class="min-h-screen transition-colors ">
 
-  <!-- ESTADO INICIAL: mensagem vazia -->
-  <div x-data="{ mensagem: '' }" class="w-full max-w-md">
-    
-    <!-- 1. O INPUT (Escreve) -->
-    <div class="form-control mb-8">
-      <label class="label">
-        <span class="label-text font-bold">Sua Mensagem:</span>
-      </label>
-      
-      <textarea 
-        x-model="mensagem" 
-        class="textarea textarea-primary textarea-lg w-full"
-        placeholder="Digite aqui..."></textarea>
-        
-      <div class="label">
-        <span class="label-text-alt">
-            Letras: <span x-text="mensagem.length"></span>
-        </span>
-      </div>
+  <nav class="navbar bg-base-100 shadow-lg px-8">
+    <div class="flex-1 font-bold text-xl">DevPortfolio</div>
+  
+    <div class="flex-none gap-2">
+      <!-- Botão HOME -->
+      <button 
+        @click="tab = 'home'" 
+        class="btn btn-sm btn-ghost"
+        :class="{ 'btn-active': tab === 'home' }">
+        Home
+      </button>
+
+      <!-- Botão PROJETOS -->
+      <button 
+        @click="tab = 'sobre'" 
+        class="btn btn-sm btn-ghost"
+        :class="{ 'btn-active': tab === 'sobre' }">
+        Sobre
+      </button>
+
+      <button 
+        @click="tab = 'contato'" 
+        class="btn btn-sm btn-ghost"
+        :class="{ 'btn-active': tab === 'contato' }">
+        Contato
+      </button>
+
+      <!-- Botão de Mudar o Dark Mode -->
+      <input type="checkbox" class="toggle" 
+            x-model="dark" />
     </div>
 
-    <!-- 2. O RESULTADO (Lê) -->
-    <div class="card bg-base-100 shadow-xl border-2 border-primary">
-      <div class="card-body items-center text-center">
-        <h2 class="card-title text-2xl">Visualização</h2>
-        
-        <p x-show="mensagem.length === 0" class="text-gray-400 italic">
-            (Aguardando texto...)
-        </p>
+  </nav>
+  <main class="p-10 max-w-5xl mx-auto">
 
-        <p x-text="mensagem" class="text-xl font-medium"></p>
-      </div>
+    <div x-show="tab === 'home'" x-transition:enter.duration.500ms>
+         
+        <div class="hero min-h-[50vh] bg-base-200 rounded-box">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-5xl font-bold">Olá, eu sou Dev</h1>
+                    <button @click="tab = 'contato'" 
+                            class="btn btn-primary mt-6">
+                        Fale Comigo
+                    </button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-  </div>
+    <div x-show="tab === 'sobre'" x-transition:enter.duration.500ms>
+        <div class="collapse flex flex-col gap-2 h-full p-6 bg-base-200 rounded-box">
+            <details class="collapse bg-base-100 border border-base-300" name="my-accordion-det-1">
+              <summary class="collapse-title font-semibold">How do I create an account?</summary>
+              <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+            </details>
+            <details class="collapse bg-base-100 border border-base-300" name="my-accordion-det-1">
+              <summary class="collapse-title font-semibold">I forgot my password. What should I do?</summary>
+              <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+            </details>
+            <details class="collapse bg-base-100 border border-base-300" name="my-accordion-det-1">
+              <summary class="collapse-title font-semibold">How do I update my profile information?</summary>
+              <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+            </details>
+        </div>
+    </div>
 
+    <div class="m-auto w-80 border border-base-300 p-10 rounded-lg " x-show="tab === 'contato'" x-transition:enter.duration.500ms>
+      <fieldset class="fieldset">
+        <legend class="fieldset-legend">Email</legend>
+        <input type="text" class="input" placeholder="Type here" />
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend class="fieldset-legend">Digite sua mensagem:</legend>
+        <input type="text" class="input" placeholder="Type here" />
+      </fieldset>
+
+      <button class="btn btn-primary mt-4 max-w-24">Enviar</button>
+    </div>
+
+</main>
 </body>
 </html>
