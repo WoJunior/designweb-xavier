@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.2/dist/cdn.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="flex justify-center h-screen">
+
+    <div x-data="{hover: false}" class="m-auto">
+
+        <img @mouseenter="hover = true" 
+        @mouseleave="hover = false"
+        :class="{'scale-120' : hover}"
+        :src="hover ? 'imagem2.jfif' : 'imagem1.jfif'"
+
+        class="transition-all duration-300"
+        alt="">
+ 
+    </div>
+
+</body>
+
+</html>
