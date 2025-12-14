@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.2/dist/cdn.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="flex justify-center h-screen">
+
+    <div class="m-auto w-1/2" x-data="{ ler: false }">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis eligendi adipisci maiores beatae ipsum explicabo in? Id mollitia quae aperiam facere fuga alias amet, incidunt dolore iste. Veniam, quidem!
+
+        <div class="mt-4" x-show="ler" >
+            Sunt fugit incidunt aliquam nulla unde ab corrupti animi quibusdam. Nam consectetur qui pariatur autem hic, quia harum exercitationem nesciunt rem esse beatae accusantium quisquam corporis atque, maiores dolorem laudantium.
+
+        </div>
+
+        <button class="font-bold" @click="ler = !ler" x-text="ler ? 'Ler menos' : 'Ler mais'">
+        </button>
+    </div>
+
+</body>
+
+</html>
