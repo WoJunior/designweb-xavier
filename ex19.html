@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.2/dist/cdn.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="flex justify-center h-screen">
+
+    <div x-data="{
+        cores: ['text-green-500', 'text-yellow-500', 'text-red-500'], indice: 0, trocarCor() {this.indice = (this.indice + 1) % this.cores.length}}"
+    class="p-4 border-2 border-base-300 m-auto fieldset rounded-lg">
+
+        <p :class="cores[indice]" class="text-xl font-bold">
+            Texto que muda de cor
+        </p>
+
+        <button @click="trocarCor"
+                class="btn mt-3 px-3 py-1">
+            Mudar cor
+        </button>
+</div>
+
+</body>
+
+</html>
