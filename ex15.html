@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.2/dist/cdn.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+</head>
+<body class="flex h-screen">
+    
+    <div class="m-auto" x-data="{ count: true, liked: true }">
+        
+        <button class="cursor-pointer" @click="count = !count; liked = !liked" x-text="liked ? '🤍' : '❤️' ">
+        </button>
+        <p class="text-center" x-text="count ? '0' : '1'"></p>
+    </div>
+
+</body>
+</html>
