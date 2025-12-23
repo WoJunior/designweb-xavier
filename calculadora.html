@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    
+    <main 
+        x-data="{
+        servicos: [],
+        nome: '',
+        valor: 0,
+        get total() {
+          return this.servicos.reduce((soma, servico) => soma + servico.valor, 0)
+        }
+      }" 
+        class="flex flex-col w-80 justify-center items-center m-auto min-h-screen border gap-3">
+
+        <div class="flex gap-2 w-2/3 border-slate-300 rounded-lg justify-center items-center border-b p-2">
+
+            <p class="rounded-full text-green-600 bg-green-200 font-bold w-11 text-xl p-2 text-center">
+                $
+            </p>
+
+            <p class="text-center font-bold text-slate-600">
+                Orçamento
+            </p>
+
+        </div>
+
+        <div class="flex w-2/3 gap-2">
+            <input type="text" placeholder="Digite o serviço: " class="input w-full border-slate-300 text-slate-600" x-model="nome">
+            <input type="text" placeholder="Valor" class="input w-1/2 border-slate-300 text-slate-600" x-model.number="valor">
+            
+        </div>
+
+        <div class="w-2/3">
+
+            <button 
+            @click="servicos.push({ nome, valor }); nome=''; valor='';" 
+            class="btn w-full bg-white border-slate-300 text-slate-600">
+                Adicionar
+            </button>
+
+        </div>
+
+        <div class="w-2/3">
+
+            <ul class="flex flex-col gap-2 list w-full rounded-xl">
+                <template x-for="servico in servicos" :key="servico.nome">
+                    
+                    <li class="flex gap-2 list-row border text-slate-600 border-slate-300 p-2 justify-between">
+                        <span x-text="servico.nome"></span>
+                        <span x-text="`R$ ${servico.valor}`"></span>
+                    </li>
+
+                </template>
+            </ul>
+
+        </div>
+
+        <div class="w-2/3 flex justify-between font-bold bg-gray-800 text-slate-200 p-2 rounded-lg">
+            <span>TOTAL</span>
+            <span x-text="`R$ ${total}`"></span>
+        </div>
+
+    </main>
+
+</body>
+</html>
